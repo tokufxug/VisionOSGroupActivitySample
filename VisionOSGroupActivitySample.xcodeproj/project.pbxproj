@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC6286B2BA1B01100B5091E /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 1AC6286A2BA1B01100B5091E /* RealityKitContent */; };
 		1AC6286D2BA1B01100B5091E /* VisionOSGroupActivitySampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6286C2BA1B01100B5091E /* VisionOSGroupActivitySampleApp.swift */; };
 		1AC6286F2BA1B01100B5091E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6286E2BA1B01100B5091E /* ContentView.swift */; };
 		1AC628712BA1B01200B5091E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC628702BA1B01200B5091E /* Assets.xcassets */; };
 		1AC628742BA1B01200B5091E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC628732BA1B01200B5091E /* Preview Assets.xcassets */; };
 		1AC6287F2BA1B01200B5091E /* VisionOSGroupActivitySampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6287E2BA1B01200B5091E /* VisionOSGroupActivitySampleTests.swift */; };
+		1AC628892BA1B02E00B5091E /* SharePlaySampleActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC628882BA1B02E00B5091E /* SharePlaySampleActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		1AC628652BA1B01100B5091E /* VisionOSGroupActivitySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionOSGroupActivitySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AC628692BA1B01100B5091E /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		1AC6286C2BA1B01100B5091E /* VisionOSGroupActivitySampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSGroupActivitySampleApp.swift; sourceTree = "<group>"; };
 		1AC6286E2BA1B01100B5091E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AC628702BA1B01200B5091E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +34,8 @@
 		1AC628752BA1B01200B5091E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC6287A2BA1B01200B5091E /* VisionOSGroupActivitySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSGroupActivitySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC6287E2BA1B01200B5091E /* VisionOSGroupActivitySampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSGroupActivitySampleTests.swift; sourceTree = "<group>"; };
+		1AC628882BA1B02E00B5091E /* SharePlaySampleActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlaySampleActivity.swift; sourceTree = "<group>"; };
+		1AC6288A2BA1B9FA00B5091E /* VisionOSGroupActivitySample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionOSGroupActivitySample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC6286B2BA1B01100B5091E /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +78,10 @@
 		1AC628672BA1B01100B5091E /* VisionOSGroupActivitySample */ = {
 			isa = PBXGroup;
 			children = (
+				1AC6288A2BA1B9FA00B5091E /* VisionOSGroupActivitySample.entitlements */,
 				1AC6286C2BA1B01100B5091E /* VisionOSGroupActivitySampleApp.swift */,
 				1AC6286E2BA1B01100B5091E /* ContentView.swift */,
+				1AC628882BA1B02E00B5091E /* SharePlaySampleActivity.swift */,
 				1AC628702BA1B01200B5091E /* Assets.xcassets */,
 				1AC628752BA1B01200B5091E /* Info.plist */,
 				1AC628722BA1B01200B5091E /* Preview Content */,
@@ -90,7 +92,6 @@
 		1AC628682BA1B01100B5091E /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				1AC628692BA1B01100B5091E /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -128,7 +129,6 @@
 			);
 			name = VisionOSGroupActivitySample;
 			packageProductDependencies = (
-				1AC6286A2BA1B01100B5091E /* RealityKitContent */,
 			);
 			productName = VisionOSGroupActivitySample;
 			productReference = 1AC628652BA1B01100B5091E /* VisionOSGroupActivitySample.app */;
@@ -216,6 +216,7 @@
 			files = (
 				1AC6286F2BA1B01100B5091E /* ContentView.swift in Sources */,
 				1AC6286D2BA1B01100B5091E /* VisionOSGroupActivitySampleApp.swift in Sources */,
+				1AC628892BA1B02E00B5091E /* SharePlaySampleActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VisionOSGroupActivitySample/VisionOSGroupActivitySample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VisionOSGroupActivitySample/Preview Content\"";
@@ -376,7 +378,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.visionos.sample.groupactivity.VisionOSGroupActivitySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -388,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VisionOSGroupActivitySample/VisionOSGroupActivitySample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VisionOSGroupActivitySample/Preview Content\"";
@@ -402,7 +406,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.1planet.visionos.sample.groupactivity.VisionOSGroupActivitySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -482,13 +487,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1AC6286A2BA1B01100B5091E /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AC6285D2BA1B01100B5091E /* Project object */;
 }
